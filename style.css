@@ -1,6 +1,9 @@
 :root {
-    --light-color: #e8e8e8;
-    --dark-color: #181818;
+    --light-color: #cec7bf;
+    --dark-color: #07161b;
+    --blue-color: #3d737f;
+    --white:#e8e8e8;
+    --black:#181818;
 }
 
 body {
@@ -24,7 +27,7 @@ nav {
 }
 
 /*getting rid of the line and blue color for links*/
-.nav-links a {
+a {
     text-decoration: none;
     color: var(--light-color);
 }
@@ -56,20 +59,19 @@ nav {
 }
 
 /* BIO SECTION */
+.bio {
+    display:block;
+    
+}
 .container {
     max-width: 1024px;
     margin: 0 auto;
     padding: 25px;
 }
 
-.bio {
-    margin-top: 200px;
-    display: flex;
-}
-
 .bio h2 {
     font-size: 3rem;
-    color: var(--dark-color);
+    color: var(--blue-color);
 }
 
 .bio p {
@@ -88,8 +90,14 @@ nav {
 }
 
 .button:hover {
-    /*idea: I want to do a drop shadow here*/
-    box-shadow: 10px 10px var(--light-color);
-    top: -5px;
-    left: -5px;
+    box-shadow: 5px 5px blue;
+    transform: translateY(-5px);
+}
+
+.skills {
+    width: 100%;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px 25px;
+    margin: 20px auto;
 }
