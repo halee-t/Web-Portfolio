@@ -1,0 +1,103 @@
+:root {
+    --light-color: #cec7bf;
+    --dark-color: #07161b;
+    --blue-color: #3d737f;
+    --white:#e8e8e8;
+    --black:#181818;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+/* NAVIGATION BAR */
+nav {
+    width: 100%;
+    height: 10%;
+    position: fixed; /*keeps it at the top even when you scroll*/
+    background-color: var(--dark-color);
+    color:var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*this is what moved the menu to the right*/
+    padding: 10px;
+}
+
+/*getting rid of the line and blue color for links*/
+a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+}
+
+.nav-links {
+    /*remove the bullets, margins, and padding from the list */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline; /*displays on one line*/
+    padding: 10px;
+}
+
+/*I want the Contact to be farther from the edge*/
+.nav-links li:last-of-type {
+    padding-right: 40px;
+}
+
+.menu li:hover {
+    
+}
+
+/* BIO SECTION */
+.bio {
+    display:block;
+    
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.bio h2 {
+    font-size: 3rem;
+    color: var(--blue-color);
+}
+
+.bio p {
+    font-size: 1.25rem;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--light-color);
+    background: var(--dark-color);
+    padding: 0 1rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 1.25rem;
+}
+
+.button:hover {
+    box-shadow: 5px 5px blue;
+    transform: translateY(-5px);
+}
+
+.skills {
+    width: 100%;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px 25px;
+    margin: 20px auto;
+}
