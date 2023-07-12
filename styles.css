@@ -85,8 +85,12 @@ main {
 
 .title {
   font-size: 3rem;
-  margin-right: 50px;
+  margin-right: 100px;
   min-width: 50%;
+}
+
+.accent-words {
+  color: var(--light-green);
 }
 
 .subtitle {
@@ -99,6 +103,7 @@ main {
   background-color: var(--beige);
   padding: 10px 20px;
   border-radius: 25px;
+  margin: 20px;
 }
 
 .button:hover {
@@ -129,6 +134,8 @@ main {
 }
 
 .skills-img > img {
+  width: 200px;
+  height: 200px;
   background-color: var(--beige);
   padding: 20px;
   border-radius: 10px;
