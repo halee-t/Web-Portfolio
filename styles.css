@@ -103,7 +103,11 @@ main {
   background-color: var(--beige);
   padding: 10px 20px;
   border-radius: 25px;
-  margin: 20px;
+  margin: 0px;
+}
+
+.resume {
+  margin-left: 20px;
 }
 
 .button:hover {
@@ -140,6 +144,12 @@ main {
   padding: 20px;
   border-radius: 10px;
 }
+
+.skills-img > img:hover {
+  cursor: pointer;
+}
+
+
 
 /* I want to do a drop shadow effect
 maybe have the name of the skill pop up too */
