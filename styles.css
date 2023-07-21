@@ -1,10 +1,12 @@
 :root {
   --beige: #f6efe7;
   --dark: #3c5556;
+  --green: #3c55568d;
   --coral: #e09789;
   --light-pink: #f5d4c3;
   --light-green: #c8dbd7;
   --light-blue: #e9f1ef;
+  --faded-star: #3c55568d;
 }
 
 * {
@@ -26,6 +28,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 nav > ul{
@@ -127,8 +130,8 @@ main {
   font-size: 3rem;
 }
 
-.skills-img {
-  margin: 50px 100px;
+.skills-cards, .tools-cards {
+  margin: 50px 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -137,7 +140,7 @@ main {
   gap: 20px;
 }
 
-.skills-img > img {
+.skills-img > img, .tools-cards > img {
   width: 200px;
   height: 200px;
   background-color: var(--beige);
@@ -145,11 +148,90 @@ main {
   border-radius: 10px;
 }
 
-.skills-img > img:hover {
+.skills-cards > .card:hover, .tools-cards > .card:hover {
   cursor: pointer;
 }
 
+.skills-cards > .card, .tools-cards > .card {
+  width: 200px;
+  height: 200px;
+  background-color: var(--beige);
+  padding: 20px;
+  border-radius: 10px;
+}
 
+.skill-pic {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.card {
+	width: 200px;
+	height: 200px;
+	perspective: 800px;
+}
+
+.card:hover .flip {
+  transform: rotateY(180deg) translate3d(0,0,0);
+}
+
+.flip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  perspective: 1000px;
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card-title {
+  padding-top: 30px;
+  font-size: 2rem;
+}
+
+.skill-level {
+  position: absolute;
+  top: 100px;
+  left: 35px;
+  font-size: 1.3rem;
+}
+
+.bash-stars {
+  top: 120px;
+}
+.faded-star {
+  color: var(--faded-star);
+}
+
+.skill-subtitle {
+  text-align: left;
+  margin-top: 5px;
+}
 
 /* I want to do a drop shadow effect
 maybe have the name of the skill pop up too */
