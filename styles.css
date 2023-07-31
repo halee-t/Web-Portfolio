@@ -6,12 +6,12 @@
   --light-pink: #f5d4c3;
   --light-green: #c8dbd7;
   --light-blue: #e9f1ef;
-  --faded-star: #3c55568d;
+  --faded-star: #7c81818d;
 
   --dark-blue: #547dac;
   --blue: #9fc0de;
   --orange: #f2c894;
-  --dark-orange: #ce6c30;
+  --dark-orange: #D06724;
   
 }
 
@@ -19,6 +19,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* NAVIGATION BAR */
@@ -99,7 +104,7 @@ main {
 }
 
 .accent-words {
-  color: var(--blue);
+  color: var(--orange);
 }
 
 .subtitle {
@@ -109,7 +114,7 @@ main {
 .button {
   text-decoration: none;
   color: var(--dark-blue);
-  background-color: var(--blue);
+  background-color: var(--beige);
   padding: 10px 20px;
   border-radius: 25px;
   margin: 0px;
@@ -120,7 +125,7 @@ main {
 }
 
 .button:hover {
-  background-color: var(--beige);
+  background-color: var(--orange);
   box-shadow: 5px 5px 5px rgb(16, 16, 16);
 }
 
@@ -247,8 +252,8 @@ maybe have the name of the skill pop up too */
 
 /* PROJECTS */
 #projects {
-  background-color: var(--light-pink);
-  color: var(--dark);
+  background-color: var(--beige);
+  color: var(--dark-blue);
   padding: 50px;
 }
 
@@ -258,7 +263,7 @@ maybe have the name of the skill pop up too */
 }
 
 .projects-cards {
-  margin-top: 50px;
+  margin: 50px 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -268,26 +273,61 @@ maybe have the name of the skill pop up too */
 }
 
 .project {
-  width: 300px;
-  height: 300px;
-  border: 3px solid blue;
+  width: 500px;
+  height: 500px;
+  border: 3px solid var(--dark-blue);
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: left;
+  color: #333;
 }
 
 .project-pic {
-  width: 200px;
+  width: 100%;
   height: 200px;
-  margin: auto;
+  margin: 0px auto;
   object-fit: cover;
+  border-radius: 2px;
 }
 
 .project-title {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.view-project-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: var(--beige);
+  color: #333;
+  font-size: 30px;
+  transform: rotate(-45deg);
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 400px;
+}
+
+.view-project-btn:hover {
+  color: var(--beige);
+  background-color: var(--dark-orange);
+  border: 2px solid var(--orange);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* CONTACT */
+#contact {
+  background-color: var(--blue);
+  color: #333;
+  padding: 50px;
+}
+
+#contact > h1 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 /* MEDIA */
