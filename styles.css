@@ -51,7 +51,8 @@ nav > ul{
 
 .nav-link {
   margin-left: 50px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
   text-decoration: none;
   color: inherit;
 }
@@ -89,7 +90,7 @@ main {
 
 .bubble {
   background-color: var(--dark-blue);
-  margin: 200px 100px;
+  margin: 100px 100px;
   padding: 50px;
   border-radius: 10px;
   color: var(--beige);
@@ -99,7 +100,7 @@ main {
 
 .title {
   font-size: 3rem;
-  margin-right: 100px;
+  margin-right: 50px;
   min-width: 50%;
 }
 
@@ -121,12 +122,12 @@ main {
 }
 
 .resume {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .button:hover {
   background-color: var(--orange);
-  box-shadow: 5px 5px 5px rgb(16, 16, 16);
+  box-shadow: 5px 5px 5px rgba(77, 77, 77, 0.623);
 }
 
 /* SKILLS */
@@ -138,17 +139,37 @@ main {
 
 #skills > h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
+  color: #333;
+}
+
+#Skills {
+  margin-top: 100px;
+}
+
+#Tools {
+  margin-top: 100px;
+}
+
+.card {
+  border: 3px solid #333;
+}
+
+.break {
+  height: 1px;
+  border: 1px solid #333;
+  margin: 0px 170px;
 }
 
 .skills-cards, .tools-cards {
-  margin: 50px 300px;
+  margin: 100px 150px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  row-gap: 40px;
+  column-gap: 20px;
 }
 
 .skills-img > img, .tools-cards > img {
@@ -161,6 +182,8 @@ main {
 
 .skills-cards > .card:hover, .tools-cards > .card:hover {
   cursor: pointer;
+  margin-top: -30px;
+  transition: 0.3s;
 }
 
 .skills-cards > .card, .tools-cards > .card {
@@ -244,12 +267,6 @@ main {
   margin-top: 5px;
 }
 
-/* I want to do a drop shadow effect
-maybe have the name of the skill pop up too */
-.skills-img > img:hover {
-  box-shadow: 5px 5px 5px rgb(16, 16, 16);
-}
-
 /* PROJECTS */
 #projects {
   background-color: var(--beige);
@@ -258,12 +275,13 @@ maybe have the name of the skill pop up too */
 }
 
 #projects > h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
+  margin-top: 100px;
 }
 
 .projects-cards {
-  margin: 50px 300px;
+  margin: 50px 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -333,4 +351,24 @@ maybe have the name of the skill pop up too */
 /* MEDIA */
 @media (min-width: 600px) {
   /* I want to put the closed nav bar here when I learn it */
+}
+
+/* MOBILE */
+@media (min-width: 608px) {
+ 
+}
+
+/* HALF SCREEN LAPTOP */
+@media (min-width: 1008px) {
+  
+}
+
+/* FULL LAPTOP */
+@media (min-width: 1400px) {
+  
+}
+
+/* MONITOR SIZE PLUS */
+@media (min-width: 1800px) {
+  
 }
