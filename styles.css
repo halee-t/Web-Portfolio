@@ -76,6 +76,37 @@ nav > ul{
   color: var(--orange);
 }
 
+/* SOCIALS BAR */
+.socials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  z-index: 20;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  position: fixed;
+  color: #333;
+}
+
+.socials-icon {
+  font-size: 2rem;
+  align-self: center;
+}
+
+.code-wars {
+  border-radius: 3px;
+  width: 30px;
+  background-color: #333;
+}
+
+.socials-line {
+  height: 150px;
+  width: 3px;
+  background-color: #333;
+  align-self: center;
+}
+
 /* WELCOME SECTION */
 
 main {
