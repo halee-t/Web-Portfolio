@@ -359,10 +359,33 @@
       </div>
       </section>
       <section id="contact">
-        <h1>Let's Keep In Touch!</h1>
+        <h1><div class="fa-regular fa-message"></div> Let's Keep In Touch <div class="fa-regular fa-message"></div></h1>
+        <p class="contact-subtitle">
+          If you would like to know more about me or my work,
+          send me a message! You may also email me directly.
+        </p>
         <div class="bubble">
-          
-          </div>
+          <form action="mailto:haleetisler@gmail.com" class="form contact-form">
+            <div class="contact-first-row">
+              <div class="fname-section">
+              <label class="contact-label" for="fname">First Name</label>
+              <input class="contact-input" type="text" id="fname" name="firstName" placeholder="First name ..."/>
+            </div>
+            <div class="lname-section">
+              <label class="contact-label" for="lname">Last Name</label>
+              <input class="contact-input" type="text" id="lname" name="lastName" placeholder="Last name ..."/>
+            </div>
+            </div>
+            <br>
+            <label class="contact-label" for="email">Email</label>
+            <input class="contact-input" type="email" id="email" name="emailAddress" placeholder="youremail@gmail.com"/>
+            <br>
+            <label class="contact-label" for="message">Message</label>
+            <textarea class="contact-input" id="message" name="message" placeholder="What would you like to tell me?">
+            </textarea>
+            <br>
+            <input class="submit" type="submit" value="Send It!">
+          </form>
         </div>
       </section>
     </main>

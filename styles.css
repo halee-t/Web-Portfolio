@@ -369,8 +369,86 @@ main {
 }
 
 #contact > h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
+  margin-top: 100px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  width: 80%;
+  height: 80%;
+  color: var(--beige);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-first-row {
+  display: flex;
+  flex-direction:row;
+  gap: 50px;
+}
+
+.fname-section{
+  width: 50%;
+}
+
+.lname-section {
+  width: 50%;
+}
+
+.contact-label {
+  color: var(--orange);
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+#fname {
+  width: 100%;
+}
+
+#lname {
+  width: 100%;
+}
+
+#message {
+  height: 150px;
+}
+
+.contact-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  padding: 20px 20px;
+  border: 2px solid var(--blue);
+  background-color: var(--beige);
+  color: #333;
+}
+
+.submit {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 1.5rem;
+  background-color: var(--beige);
+  border: 2px solid var(--blue);
+  color: var(--dark-blue);
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: var(--orange);
 }
 
 /* MEDIA */
