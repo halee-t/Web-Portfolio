@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav-logo {
+  height: 75px;
+  width: auto;
+  margin-left: 20px;
+}
+
+#download-img {
+  height: 20px;
+  width: auto;
+  margin-left: 5px;
+}
+
+#CTA {
+  margin-right: 20px;
+}
+
+#profile-picture {
+  clip-path: circle(20% at 50% 50%);
+  height: 20vh; /* Adjust the height and width as needed */
+  object-fit: cover;
+  transform: scale(5); /* Zoom in by a factor of 5 */
+  margin-left: 10rem; /* Center the image horizontally */
+  margin-right: 5rem;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: #007bff; /* Use your desired background color */
+}
+
+.profile-text {
+  padding: 20px; /* Add some padding for better readability */
+  color: white; /* Adjust the text color as needed */
+}
+
+.contact-icon {
+  width: 2rem;
+}
+
+.skill-img {
+  width: 3rem;
+}
