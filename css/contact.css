@@ -1,0 +1,141 @@
+:root {
+  --dark-blue: #1d3557;
+  --white: #f1faee;
+  --red: #e63946;
+  --blue: #457b9d;
+  --black: #232323;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Poppins";
+}
+
+header {
+  width: 100%;
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: solid 1px green; */
+  margin-left: 3%;
+}
+
+header .logo h1 {
+  font-size: 1em;
+}
+
+nav {
+  /* border: solid 1px pink; */
+  width: 50%;
+  margin-right: 3%;
+  font-size: 1em;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10%;
+  align-items: center;
+  /* border: solid 1px orange; */
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  color: inherit;
+}
+
+#contact {
+  color: #333;
+  padding: 50px;
+}
+
+#contact > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contact-subtitle {
+  text-align: center;
+  margin: 10px 0 50px;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-first-row {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.fname-section {
+  width: 50%;
+}
+
+.lname-section {
+  width: 50%;
+}
+
+.contact-label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#fname {
+  width: 100%;
+}
+
+#lname {
+  width: 100%;
+}
+
+#message {
+  height: 150px;
+}
+
+.contact-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  padding: 20px 20px;
+  border: 2px solid var(--blue);
+  color: var(--white);
+}
+
+.submit {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: 2px solid var(--blue);
+  color: var(--white);
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: var(--red);
+}
