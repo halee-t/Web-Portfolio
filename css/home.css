@@ -1,0 +1,90 @@
+:root {
+  --dark-blue: #1d3557;
+  --white: #f1faee;
+  --red: #e63946;
+  --blue: #457b9d;
+  --black: #232323;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Poppins";
+}
+
+header {
+  width: 100%;
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: solid 1px green; */
+  margin-left: 3%;
+}
+
+header .logo h1 {
+  font-size: 1em;
+}
+
+nav {
+  /* border: solid 1px pink; */
+  width: 50%;
+  margin-right: 3%;
+  font-size: 1em;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10%;
+  align-items: center;
+  /* border: solid 1px orange; */
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  color: inherit;
+}
+
+.main-title {
+  /* border: solid 1px purple; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-title .hello {
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+.main-title .subtitle {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.arrow {
+  /* border: solid 1px red; */
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.arrow img {
+  width: 100%;
+  height: 100%;
+}
