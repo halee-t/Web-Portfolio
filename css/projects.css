@@ -1,0 +1,152 @@
+:root {
+  --dark-blue: #1d3557;
+  --white: #f1faee;
+  --red: #e63946;
+  --blue: #457b9d;
+  --black: #232323;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Poppins";
+}
+
+/* NAVIGATION BAR */
+
+header {
+  width: 100%;
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: solid 1px green; */
+  margin-left: 3%;
+}
+
+header .logo h1 {
+  font-size: 1em;
+}
+
+nav {
+  /* border: solid 1px pink; */
+  width: 50%;
+  margin-right: 3%;
+  font-size: 1em;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10%;
+  align-items: center;
+  /* border: solid 1px orange; */
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  color: inherit;
+}
+
+/* CONTENT */
+
+#projects > h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.projects-cards {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project {
+  width: 500px;
+  height: 500px;
+  border: 3px solid var(--blue);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: var(--white);
+  background-color: var(--white);
+}
+
+.project-pic {
+  width: 100%;
+  height: 250px;
+  margin: 0px auto;
+  object-fit: cover;
+  border-radius: 2px;
+  background-color: var(--white);
+}
+
+#grizzbox-pic {
+  object-position: 0% 20%;
+}
+
+#bashPortfolio-pic {
+  object-position: 0% 10%;
+}
+
+#gitDocumentation-pic {
+  object-position: 0% 20%;
+}
+
+#webPortfolio-pic {
+  object-position: 0% 10%;
+}
+
+.project-title {
+  margin-top: 20px;
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+.project-description {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.view-project-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--red);
+  background-color: var(--white);
+  color: var(--red);
+  font-size: 30px;
+  transform: rotate(-45deg);
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 400px;
+}
+
+.view-project-btn:hover {
+  color: var(--dark-blue);
+  background-color: var(--red);
+  border: 2px solid var(--dark-blue);
+  transition: 0.3s;
+  cursor: pointer;
+}
