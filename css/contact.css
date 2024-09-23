@@ -58,6 +58,16 @@ nav ul {
   color: inherit;
 }
 
+nav :hover {
+  color: var(--red);
+}
+
+nav #selected-tab {
+  text-decoration-color: var(--red);
+}
+
+/* CONTENT */
+
 #contact {
   color: #333;
   padding: 50px;

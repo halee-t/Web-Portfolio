@@ -60,6 +60,14 @@ nav ul {
   color: inherit;
 }
 
+nav :hover {
+  color: var(--red);
+}
+
+nav #selected-tab {
+  text-decoration-color: var(--red);
+}
+
 /* CONTENT */
 /* #skills {
   background-color: var(--blue);
