@@ -13,11 +13,11 @@
   background-color: var(--dark-blue);
   color: var(--white);
   font-family: "Poppins";
+  overflow-y: hidden;
 }
 
 header {
   width: 100%;
-  /* border: solid 1px black; */
   display: flex;
   justify-content: space-between;
   padding: 25px 0px;
@@ -27,7 +27,6 @@ header .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* border: solid 1px green; */
   margin-left: 3%;
 }
 
@@ -36,7 +35,6 @@ header .logo h1 {
 }
 
 nav {
-  /* border: solid 1px pink; */
   width: 50%;
   margin-right: 3%;
   font-size: 1em;
@@ -48,7 +46,6 @@ nav ul {
   justify-content: end;
   gap: 10%;
   align-items: center;
-  /* border: solid 1px orange; */
   list-style-type: none;
 }
 
@@ -70,11 +67,12 @@ nav #selected-tab {
 
 #contact {
   color: #333;
-  padding: 50px;
+  margin: 50px;
+  padding: 50px 100px;
 }
 
 #contact > h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -85,7 +83,7 @@ nav #selected-tab {
 }
 
 .contact-form {
-  width: 80%;
+  width: 75%;
   height: 80%;
   margin: 0 auto;
   display: flex;
@@ -108,7 +106,7 @@ nav #selected-tab {
 
 .contact-label {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
@@ -136,12 +134,12 @@ nav #selected-tab {
 .submit {
   width: 20%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
   height: 50px;
   border-radius: 30px;
   font-family: inherit;
   font-size: 1.5rem;
-  border: 2px solid var(--blue);
+  border: 2px solid var(--red);
   color: var(--white);
 }
 
